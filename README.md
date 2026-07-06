@@ -101,6 +101,11 @@ hypervisorlaunchtype    Off
 <img width="956" height="781" alt="image" src="https://github.com/user-attachments/assets/b41247d0-0577-4860-9326-81148e202792" /><img width="975" height="776" alt="image" src="https://github.com/user-attachments/assets/726576e8-2aea-47a9-a97c-0b89faa37abd" />  
 **收工吃糖！**  
 
-**后记：微软你*** 以上方法可在25H2及以前版本关闭VBS，具体缺少的步骤等我稍加探索后再做决定**
+后记：微r我谢谢你 以上方法可在25H2及以前版本关闭VBS，具体缺少的步骤等我稍加探索后再做决定
+
+经过若干尝试，发现微软在25H2以后将安全设置写入了BIOS，由于启动证书更新，现在你需要：
+ * 找一个U盘，用DiskGen等工具删除所有分区，转换分区表为`GPT`
+ * 随便找一个向U盘安装UEFI Shell的工具，然后去`C:\Windows\System32`下搜索是否有`SecConfig.efi`，然后将其复制到U盘
+ * 重启引导至BIOS，`Load Optimized Defaults`并保存退出；然后引导U盘启动，尝试ls应该会列出所有文件，此时`cd`到U盘的`SecConfig.efi`存放路径，然后`.\SecConfig.efi`等程序执行后重启，然后从头检查重复流程
 
 

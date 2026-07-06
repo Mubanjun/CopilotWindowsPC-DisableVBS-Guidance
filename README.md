@@ -99,7 +99,8 @@ hypervisorlaunchtype    Off
 然后按四次 `Windows徽标键`/ `F3` ，重新开机即可打开“运行”检查 `msinfo32` 中的信息了:  
 <img width="1050" height="830" alt="image" src="https://github.com/user-attachments/assets/99be46ae-a3dc-4f6c-8204-d214273b071e" /><img width="961" height="767" alt="image" src="https://github.com/user-attachments/assets/070e1ff6-3617-4d8a-a071-370ca18464bb" />  
 <img width="956" height="781" alt="image" src="https://github.com/user-attachments/assets/b41247d0-0577-4860-9326-81148e202792" /><img width="975" height="776" alt="image" src="https://github.com/user-attachments/assets/726576e8-2aea-47a9-a97c-0b89faa37abd" />  
-**收工吃糖！**
+**收工吃糖！**  
 
+**后记：微软你*** 以上方法可在25H2及以前版本关闭VBS，具体缺少的步骤等我稍加探索后再做决定**
 
 
